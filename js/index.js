@@ -35,5 +35,5 @@ function writeIndexPageToFirebaseAndMoveOn(userId, answer) {
 }
 
 function moveOn() {
-  window.location.href="psych.html?1"
+  window.location.href="../html/psych.html?1"
 }
