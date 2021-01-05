@@ -1,0 +1,23 @@
+.lecture-video {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.butt-container {
+  text-align: center;
+}
+
+.longButton{
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:50%;
+  background-color: #403ca6;
+  color: white;
+}
+
+.instruction{
+  text-align: center;
+  color: grey;
+}

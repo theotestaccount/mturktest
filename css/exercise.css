@@ -1,0 +1,98 @@
+ah1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h4 {
+   display:inline-block;
+}
+
+h5 {
+   display:inline-block;
+}
+
+p {
+   display:inline-block;
+}
+
+.exercise-hint{
+  text-align: elft;
+  color: grey;
+  background-color: e8ded2
+}
+
+.btn-insturction{
+  text-align: center;
+  display:block;
+  color: grey;
+  font-size: 12px;
+}
+
+.longButton{
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  width:50%;
+}
+
+.question{
+  text-align: left;
+}
+
+.exercise-question {
+  color: #403ca6;
+}
+
+.warning {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.question-contents{
+  display: flex;
+}
+
+.answer {
+  text-align: center;
+}
+
+.answerInputWithPadding {
+  margin-right: 2px;
+  margin-left: 2px;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size: 19px;
+}
+
+.exercise_answer{
+  text-align: center;
+}
+
+.exercise-submit-btn{
+  text-align: right;
+  padding-right: 100px;
+  display:inline-block;
+}
+
+.div-with-padding{
+  display:inline-block;
+  padding-right: 5px;
+}
+
+.answer-textarea{
+  height: 180px;
+}
+
+
+.finalExercise-textarea{
+  height: 300px;
+}
+
+.exercise-sampleCode{
+  text-align: left;
+}
+
+.submit-btn{
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MTurk Experiment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/exercise.css"/>
+</head>
+<!-- Head End---------------------------------------->
+
+<body>
+  <div class="container exercise">
+
+    <!-- Question ---------------------------------------->
+    <div class="container question" id="question">
+      <p class="exercise-title" id="exercise-title"></p><br/></br/>
+      <h4 class="exercise-question" id="question-text"></h4><br/></br/><br />
+      <div class="container question" id="question-contents"></div><br/></br/>
+      <p class="exercise-hint" id="hint-text"></p><br/></br/>
+    </div>
+
+    <!-- Answer ---------------------------------------->
+    <div class="container exercise_answer" id="answer">
+    </div>
+
+    <!-- Submit ---------------------------------------->
+    <div class="container exercise-submit-btn">
+      <h5 class= "warning" id="warning"> </h5><br/></br/>
+      <a href="#" class="btn btn-secondary btn-lg active exercise-hint-btn" role="button" aria-pressed="true">Hint!</a>
+      <a href="#" class="btn btn-primary btn-lg active exercise-next-btn" role="button" aria-pressed="true">Done</a>
+    </div>
+  </div>
+
+  <!-- Firebase ---------------------------------------->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+  <!-- js ---------------------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/firebaseConfig.js" charset="utf-8"></script>
+  <script src="../js/contentsData.js" charset="utf-8"></script>
+  <script src="../js/exerciseData.js" charset="utf-8"></script>
+  <script src="../js/exercise.js" charset="utf-8"></script>
+  <script src="../js/timeme.js"></script>
+  <script type="text/javascript">
+    TimeMe.initialize({
+        currentPageName: "home-page", // page name
+        idleTimeoutInSeconds: 15 // time before user considered idle
+    });</script>
+</body>
+
+</html>
