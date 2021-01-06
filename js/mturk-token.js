@@ -18,7 +18,7 @@ $(document).ready(function() {
 });
 
 function writeData() {
-  firebase.database().ref(id + '/mTurkCode').set({
+  firebase.database().ref('Test5/' + id + '/mTurkCode').set({
     code: mTurkCode
   });
 }

@@ -163,7 +163,7 @@ function writeAnswerDataAndMoveOn(answer) {
   const num = parseInt(psychNum);
   const question = questionContents[num]["text"];
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
-  firebase.database().ref(id + '/psyc/' + psychNum).update({
+  firebase.database().ref('Test5/' + id + '/psyc/' + psychNum).update({
     timeSpent: timeSpentOnPage,
     question: question,
     answer: answer

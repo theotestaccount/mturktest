@@ -19,7 +19,7 @@ function moveOn() {
 
 function writeTimeToFirebaseAndMoveOn() {
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
-  firebase.database().ref(id + '/iq-intro').update({
+  firebase.database().ref('Test5/' + id + '/iq-intro').update({
     timeSpent: timeSpentOnPage
   }, function(error) {
     if (error) {

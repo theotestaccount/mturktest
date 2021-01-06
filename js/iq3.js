@@ -36,7 +36,7 @@ function writeTest1AnswerToFirebase() {
 
 function writeAnswerDataAndMoveOn() {
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
-  firebase.database().ref(id + '/iq3').update({
+  firebase.database().ref('Test5/' + id + '/iq3').update({
     timeSpent: timeSpentOnPage,
     answer: answer,
     gotItRight: isRight

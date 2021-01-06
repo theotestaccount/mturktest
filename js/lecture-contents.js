@@ -27,7 +27,7 @@ function getID() {
 function writeDataAndMoveOn() {
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
   timeSpentOnPage = timeSpentOnPage.toFixed(1);
-  firebase.database().ref(id + '/lecture-contents/' + videoNum).set({
+  firebase.database().ref('Test5/' + id + '/lecture-contents/' + videoNum).set({
     timeSpent: timeSpentOnPage
   }, function(error) {
     if (error) {

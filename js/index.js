@@ -23,7 +23,7 @@ function uuidv4() {
 
 function writeIndexPageToFirebaseAndMoveOn(userId, answer) {
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
-  firebase.database().ref(id + '/indexPage/').update({
+  firebase.database().ref('Test5/' + id + '/indexPage/').update({
     timeSpent: timeSpentOnPage
   }, function(error) {
     if (error) {

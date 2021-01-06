@@ -23,7 +23,7 @@ function moveOn() {
 
 function writeAnswerDataAndMoveOn() {
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
-  firebase.database().ref(id + '/iq1').update({
+  firebase.database().ref('Test5/' + id + '/iq1').update({
     timeSpent: timeSpentOnPage,
     answer: answer,
     gotItRight: isRight

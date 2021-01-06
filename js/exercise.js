@@ -101,7 +101,7 @@ function showFillInTheBlankAlert() {
 function writeDataAndMoveOn() {
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
   timeSpentOnPage = timeSpentOnPage.toFixed(1);
-  firebase.database().ref(id + '/exercise/' + exerciseID).update({
+  firebase.database().ref('Test5/' + id + '/exercise/' + exerciseID).update({
     timeSpent: timeSpentOnPage,
     inputAnswer: answerInput.value + " " + answerInput2.value,
     textareaInput: textInput.value,
@@ -146,9 +146,9 @@ function isAllDone(levelContentsArray) {
     return true
   } else if (levelContentsArray == l3 && videoNum < 1) {
     return false
-  } else if (levelContentsArray == l2 && videoNum == 1) {
+  } else if (levelContentsArray == l2 && videoNum == 4) {
     return true
-  } else if (levelContentsArray == l2 && videoNum < 1) {
+  } else if (levelContentsArray == l2 && videoNum < 4) {
     return false
   } else if (levelContentsArray == l1 && videoNum == 2) {
     return true

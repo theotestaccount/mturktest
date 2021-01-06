@@ -388,7 +388,7 @@ const exerciseQuestions = {
   ],
 
   "lec_3_0/exe_5_0": [
-    "Q: Write a function with name 'addFollowerCount' function with one parameter, 'newFollowerNum' of type 'Int'. <br> Inside the function, declare a var existingFollowerNum equal to 130. <br> Then declare another var totalFollower, which is equal to 'existingFollowerNum' plus 'newFollowerNum.'",
+    "Q: (Last Question) <br>Write a function with name 'addFollowerCount' function with one parameter, 'newFollowerNum' of type 'Int'. <br> Inside the function, declare a var existingFollowerNum equal to 130. <br> Then declare another var totalFollower, which is equal to 'existingFollowerNum' plus 'newFollowerNum.'",
     "",
     false,
     [],
