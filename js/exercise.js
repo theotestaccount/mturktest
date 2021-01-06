@@ -97,13 +97,22 @@ function showFillInTheBlankAlert() {
   if (confirm("Please answer the question to move on")) {};
 }
 
+function getAnswers() {
+  var inputs = document.getElementsByClassName("answerInputWithPadding")
+  var userAnswer = "";
+  for (var i=0; i<inputs.length; i++) {
+    userAnswer += inputs[i].value + " "
+  }
+  return userAnswer
+}
 
 function writeDataAndMoveOn() {
+  const userAnswer = getAnswers()
   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
   timeSpentOnPage = timeSpentOnPage.toFixed(1);
   firebase.database().ref('Test5/' + id + '/exercise/' + exerciseID).update({
     timeSpent: timeSpentOnPage,
-    inputAnswer: answerInput.value + " " + answerInput2.value,
+    inputAnswer: userAnswer,
     textareaInput: textInput.value,
     hintOpened: hintOpened
   }, function(error) {
